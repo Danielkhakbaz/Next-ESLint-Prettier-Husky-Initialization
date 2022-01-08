@@ -11,7 +11,7 @@
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx",
     "format": "prettier --write .",
-    "test-all": "yarn lint --fix && yarn format && yarn check-types && yarn check-format && yarn check-lint && yarn build"
+    "test-all": "yarn lint --fix && yarn check-types && yarn check-format && yarn check-lint && yarn format"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.3.0",
