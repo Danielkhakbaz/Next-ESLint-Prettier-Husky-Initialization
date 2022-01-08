@@ -1,4 +1,4 @@
-In order to setup a Next.js app with ESLint, Prettier, Husky and also setting a Git Repository, We have to follow these steps below:
+In order to setup a <italic>Next.js</italic> app with <italic>ESLint</italic>, <italic>Prettier</italic>, <italic>Husky</italic> and also setting a <italic>Git</italic> Repository, We have to follow these steps below:
 
 <strong>Git</strong>
 
