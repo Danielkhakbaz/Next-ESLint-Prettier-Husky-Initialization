@@ -1,39 +1,37 @@
-In order to setup a _Next.js_ app with _ESLint_, _Prettier_, _Husky_ and also setting a _Git_ Repository, We have to follow these steps below:
+# In order to setup a _Next.js_ app with _ESLint_, _Prettier_, _Husky_ and also setting a _Git_ Repository, We have to follow these steps below
 
-<h3>Git</h3>
+## Git
 
-- At first, We should delete every Git file using: <strong>rd .git /s/q</strong>
-- Then we must initialize our Git in our Project using: <strong>git init</strong>
-- Add every single changed files to your Repository: <strong>git add .</strong>
-- Commit your changes on your Repository with: <strong>git commit -m ""</strong>
+- At first, We should delete every Git file using: **rd .git /s/q**
+- Then we must initialize our Git in our Project using: **git init**
+- Add every single changed files to your Repository: **git add .**
+- Commit your changes on your Repository with: **git commit -m ""**
 - Create a new Repository on the Github website
-- Set the existing Git Repository with your Project using: <strong>git remote add origin GIT_REP_ADDRESS</strong>
-- Push all the changes with: <strong>git push -u origin master</strong>
+- Set the existing Git Repository with your Project using: **git remote add origin GIT_REP_ADDRESS**
+- Push all the changes with: **git push -u origin master**
 
-<h3>ESLint</h3>
+## ESLint
 
-- Add ESLint to your Project: <strong>yarn add eslint</strong>
-- Start initializing ESLint for your Project: <strong>yarn run eslint --init</strong>
+- Add ESLint to your Project: **yarn add eslint**
+- Start initializing ESLint for your Project: **yarn run eslint --init**
+- These are some suggested rules for your Project:
+  `"rules": { "react/jsx-uses-react": "error", "react/jsx-uses-vars": "error", "spaced-comment": ["error", "always", { "markers": ["/"] }] }`
 
-<h3>Prettier</h3>
+## Prettier
 
-- Add Prettier to your Project: <strong>yarn add prettier</strong>
+- Add Prettier to your Project: **yarn add prettier**
 - Then add "prettier" to your .eslintrc file as one of the extends
-- Install this package for the solving the conflict between ESLint and Prettier using: <strong>yarn add eslint-config-prettier</strong>
+- Install this package for the solving the conflict between ESLint and Prettier using: **yarn add eslint-config-prettier**
 - Create a .prettierrc file and start writing your rules as a json
 - Suggested rules are:
-  {
-  "printWidth": 80,
-  "tabWidth": 2,
-  "semi": true,
-  "singleQuote": false,
-  "bracketSpacing": true,
-  "bracketSameLine": true,
-  "trailingComma": "es5",
-  "endOfLine": "lf"
-  }
+  `{ "printWidth": 80, "tabWidth": 2, "semi": true, "singleQuote": false, "bracketSpacing": true, "bracketSameLine": true, "trailingComma": "es5", "endOfLine": "lf" }`
 
-<h3>VSCode</h3>
+## Next.js
+
+- Add the "next" in the end of all the extends
+- Disable the jsDoc problem in \_app.tsx file with: **eslint-disable-next-line require-jsdoc**
+
+## VSCode
 
 - Set your default formatter on VSCode to Prettier - Code Formatter
 - Then turn on the FormatOnSave and FormatOnPaste on your settings
@@ -50,9 +48,9 @@ In order to setup a _Next.js_ app with _ESLint_, _Prettier_, _Husky_ and also se
   }
   }
 
-<h3>Husky</h3>
+## Husky
 
-- Install husky on your Project: <strong>npx husky-init && yarn</strong>
+- Install husky on your Project: **npx husky-init && yarn**
 - Add these lines of scripts to your package.json file:
   {
   "check-types": "tsc --pretty --noEmit",
