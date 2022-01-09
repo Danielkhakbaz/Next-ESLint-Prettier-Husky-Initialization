@@ -10,7 +10,7 @@
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx",
-    "fix": "yarn lint --fix && prettier --write ."
+    "fix": "next lint --fix && prettier --write ."
   },
   "dependencies": {
     "eslint-config-prettier": "^8.3.0",
