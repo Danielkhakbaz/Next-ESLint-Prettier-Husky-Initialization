@@ -38,25 +38,12 @@
 - Create a new Folder named .vscode
 - Inside that, Create a settings.json
 - Start writing these codes as json in the settings.json file:
-  {
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-  "source.fixAll.eslint": true,
-  "source.fixAll.format": true
-  }
-  }
+  `{ "editor.formatOnPaste": true, "editor.formatOnSave": true, "editor.defaultFormatter": "esbenp.prettier-vscode", "editor.codeActionsOnSave": { "source.fixAll.eslint": true, "source.fixAll.format": true } }`
 
 ## Husky
 
 - Install husky on your Project: **npx husky-init && yarn**
 - Add these lines of scripts to your package.json file:
-  {
-  "check-types": "tsc --pretty --noEmit",
-  "check-format": "prettier --check .",
-  "check-lint": "eslint . --ext ts --ext tsx",
-  "format": "prettier --write .",
-  "test-all": "yarn format && yarn check-types && yarn check-format && yarn check-lint && yarn build"
-  }
+  `{ "check-types": "tsc --pretty --noEmit", "check-format": "prettier --check .", "check-lint": "eslint . --ext ts --ext tsx", "fix": "lint --fix && prettier --write ." }`
 - Add these texts from https://github.com/jarrodwatts/code-like-google/blob/main/.husky/pre-commit to pre-commit file inside .husky folder
+- Just in case You're using yarn instead of npm, You should pay attention to the pre-commit file
