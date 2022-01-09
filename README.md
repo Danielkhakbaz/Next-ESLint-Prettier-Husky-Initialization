@@ -28,6 +28,7 @@
 
 ## Next.js
 
+- Add this package for linting your next Project
 - Add the "next" in the end of all the extends
 - Disable the jsDoc problem in \_app.tsx file with: **eslint-disable-next-line require-jsdoc**
 
