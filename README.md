@@ -16,6 +16,7 @@
 - Start initializing ESLint for your Project: **yarn run eslint --init**
 - These are some suggested rules for your Project:
   `"rules": { "react/jsx-uses-react": "error", "react/jsx-uses-vars": "error", "spaced-comment": ["error", "always", { "markers": ["/"] }] }`
+- Add the "next" in the end of all the extends
 
 ## Prettier
 
@@ -28,8 +29,6 @@
 
 ## Next.js
 
-- Add this package for linting your next Project
-- Add the "next" in the end of all the extends
 - Disable the jsDoc problem in \_app.tsx file with: **eslint-disable-next-line require-jsdoc**
 
 ## VSCode
