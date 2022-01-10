@@ -2,34 +2,34 @@
 
 ## Git
 
-- At first, We should delete every Git file using: **rd .git /s/q**
-- Then we must initialize our Git in our Project using: **git init**
-- Add every single changed files to your Repository: **git add .**
-- Commit your changes on your Repository with: **git commit -m ""**
+- At first, We should delete every Git file using: `rd .git /s/q`
+- Then we must initialize our Git in our Project using: `git init`
+- Add every single changed files to your Repository: `git add .`
+- Commit your changes on your Repository with: `git commit -m ""`
 - Create a new Repository on the Github website
-- Set the existing Git Repository with your Project using: **git remote add origin GIT_REP_ADDRESS**
-- Push all the changes with: **git push -u origin master**
+- Set the existing Git Repository with your Project using: `git remote add origin GIT_REP_ADDRESS`
+- Push all the changes with: `git push -u origin master`
 
 ## ESLint
 
-- Add ESLint to your Project: **yarn add eslint**
-- Start initializing ESLint for your Project: **yarn run eslint --init**
+- Add ESLint to your Project: `yarn add eslint`
+- Start initializing ESLint for your Project: `yarn run eslint --init`
 - These are some suggested rules for your Project:
   `"rules": { "react/jsx-uses-react": "error", "react/jsx-uses-vars": "error", "spaced-comment": ["error", "always", { "markers": ["/"] }] }`
 - Add the "next" in the end of all the extends
 
 ## Prettier
 
-- Add Prettier to your Project: **yarn add prettier**
+- Add Prettier to your Project: `yarn add prettier`
 - Then add "prettier" to your .eslintrc file as one of the extends
-- Install this package for the solving the conflict between ESLint and Prettier using: **yarn add eslint-config-prettier**
+- Install this package for the solving the conflict between ESLint and Prettier using: `yarn add eslint-config-prettier`
 - Create a .prettierrc file and start writing your rules as a json
 - Suggested rules are:
   `{ "printWidth": 80, "tabWidth": 2, "semi": true, "singleQuote": false, "bracketSpacing": true, "bracketSameLine": true, "trailingComma": "es5", "endOfLine": "lf" }`
 
 ## Next.js
 
-- Disable the jsDoc problem in \_app.tsx file with: **eslint-disable-next-line require-jsdoc**
+- Disable the jsDoc problem in \_app.tsx file with: `eslint-disable-next-line require-jsdoc`
 
 ## VSCode
 
@@ -42,7 +42,7 @@
 
 ## Husky
 
-- Install husky on your Project: **npx husky-init && yarn**
+- Install husky on your Project: `npx husky-init && yarn`
 - Add these lines of scripts to your package.json file:
   `{ "check-types": "tsc --pretty --noEmit", "check-format": "prettier --check .", "check-lint": "eslint . --ext ts --ext tsx", "fix": "next lint --fix && prettier --write ." }`
 - Add these texts from https://github.com/jarrodwatts/code-like-google/blob/main/.husky/pre-commit to pre-commit file inside .husky folder
