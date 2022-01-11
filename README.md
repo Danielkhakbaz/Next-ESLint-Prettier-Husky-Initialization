@@ -44,6 +44,6 @@
 
 - Install husky on your Project: `npx husky-init && yarn`
 - Add these lines of scripts to your package.json file:
-  `{ "check-types": "tsc --pretty --noEmit", "check-format": "prettier --check .", "check-lint": "eslint . --ext ts --ext tsx", "fix": "next lint --fix && prettier --write ." }`
-- Add these texts from <https://github.com/jarrodwatts/code-like-google/blob/main/.husky/pre-commit> to pre-commit file inside .husky folder
+  `"check-types": "tsc --pretty --noEmit", "check-format": "prettier --check .", "check-lint": "eslint . --ext ts --ext tsx", "fix": "next lint --fix && prettier --write ."`
+- Add these texts from <https://github.com/Danielkhakbaz/Next-ESLint-Prettier-Husky-Initialization/blob/master/.husky/pre-commit> to pre-commit file inside .husky folder
 - Just in case You're using yarn instead of npm, You should pay attention to the pre-commit file
