@@ -15,7 +15,7 @@
 - Add ESLint to your Project: `yarn add eslint`
 - Start initializing ESLint for your Project: `yarn run eslint --init`
 - These are some suggested rules for your Project:
-  `"rules": { "react/jsx-uses-react": "error", "react/jsx-uses-vars": "error", "spaced-comment": ["error", "always", { "markers": ["/"] }] }`
+  `"rules": { "react/jsx-uses-react": "error", "react/jsx-no-unused-vars": "off", "@typescript-eslint/no-unused-vars": ["error"], "react/react-in-jsx-scope": 0, "spaced-comment": ["error", "always", { "markers": ["/"] }] }`
 - Add the "next" in the end of all the extends
 
 ## Prettier
