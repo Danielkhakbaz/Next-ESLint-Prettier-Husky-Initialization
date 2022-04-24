@@ -30,6 +30,7 @@
 ## Next.js
 
 - Disable the jsDoc problem in \_app.tsx file with: `eslint-disable-next-line require-jsdoc`
+- Add the "next" in the end of all the extends in the eslintrc.json file
 
 ## VSCode
 
