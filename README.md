@@ -25,7 +25,7 @@
 - Install this package for the solving the conflict between ESLint and Prettier using: `yarn add eslint-config-prettier`
 - Create a .prettierrc file and start writing your rules as a json
 - Suggested rules are:
-  `{ "printWidth": 80, "tabWidth": 2, "semi": true, "singleQuote": false, "bracketSpacing": true, "bracketSameLine": true, "trailingComma": "es5", "endOfLine": "lf" }`
+  `{ "printWidth": 80, "tabWidth": 2, "semi": true, "singleQuote": false, "bracketSpacing": true, "bracketSameLine": false, "trailingComma": "es5", "endOfLine": "lf" }`
 
 ## Next.js
 
