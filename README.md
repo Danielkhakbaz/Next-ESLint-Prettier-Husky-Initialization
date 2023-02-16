@@ -22,7 +22,7 @@
 
 - Add Prettier to your Project: `yarn add prettier`
 - Then add "prettier" to your .eslintrc file as one of the extends
-- Install this package for the solving the conflict between ESLint and Prettier using: `yarn add eslint-config-prettier`
+- Install this package for the solving the conflict between ESLint and Prettier using: `yarn add eslint-config-prettier && yarn add eslint-config-next`
 - Create a .prettierrc file and start writing your rules as a json
 - Suggested rules are:
   `{ "printWidth": 80, "tabWidth": 2, "semi": true, "singleQuote": false, "bracketSpacing": true, "bracketSameLine": false, "trailingComma": "es5", "endOfLine": "lf" }`
