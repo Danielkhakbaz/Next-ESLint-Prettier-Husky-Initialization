@@ -15,41 +15,7 @@
 
 - Add ESLint to your Project: `yarn add eslint`
 - Start initializing ESLint for your Project: `yarn run eslint --init`
-- This is the .eslintrc.json I used for my projects:
-  `{
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "next"
-  ],
-  "overrides": [],
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": ["react", "@typescript-eslint"],
-  "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"],
-    "react/react-in-jsx-scope": 0,
-    "spaced-comment": ["error", "always", { "markers": ["/"] }],
-    "new-cap": 0
-  }
-}
-`
+- This is the .eslintrc.json I used for my projects, I provide you the link so you can use it for your projects <https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/.eslintrc.json>
 - You can see the content of a proper .eslintignore in here <https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/.eslintignore>
 - Add the "next" and "prettier" in the end of all the extends in the .eslintrc.json file
 
@@ -88,12 +54,26 @@
 - Create a new Folder named .vscode
 - Inside that, Create a settings.json
 - Start writing these codes as json in the settings.json file:
-  `{ "editor.formatOnPaste": true, "editor.formatOnSave": true, "editor.defaultFormatter": "esbenp.prettier-vscode", "editor.codeActionsOnSave": { "source.fixAll.eslint": true, "source.fixAll.format": true } }`
+  `  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.format": "explicit"
+  }`
 
 ## Husky
 
 - Install husky on your Project: `npx husky-init && yarn`
 - Add these lines of scripts to your package.json file:
-  `"check-types": "tsc --pretty --noEmit", "check-format": "prettier --check .", "check-lint": "eslint . --ext ts --ext tsx", "check-all": "yarn check-types && yarn check-format && yarn check-lint", "fix": "next lint --fix && prettier --write ."`
-- Add these texts from <https://github.com/Danielkhakbaz/Next-ESLint-Prettier-Husky-Initialization/blob/master/.husky/pre-commit> to pre-commit file inside .husky folder
+  `    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "fix": "next lint --fix && prettier --write .",
+    "lint": "next lint",
+    "upgrade": "upgrade-interactive --latest",
+    "knip": "npx knip",
+    "analyze": "ANALYZE=true yarn build",
+    "postinstall": "husky install && prisma generate"`
+- Add these texts from <https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/.husky/pre-commit> to pre-commit file inside .husky folder
 - Just in case You're using yarn instead of npm, You should pay attention to the pre-commit file
