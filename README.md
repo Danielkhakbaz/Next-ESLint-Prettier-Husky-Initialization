@@ -1,4 +1,4 @@
-# In order to setup a _Next.js_ app with _ESLint_, _Prettier_, _Husky_ and also setting a _Git_ Repository, We have to follow these steps below
+# In order to setup a _Next.js_ app with _Typescript_, _ESLint_, _Prettier_, _Husky_ and also setting a _Git_ Repository, We have to follow these steps below
 
 ## Git
 
@@ -14,9 +14,57 @@
 
 - Add ESLint to your Project: `yarn add eslint`
 - Start initializing ESLint for your Project: `yarn run eslint --init`
-- These are some suggested rules for your Project:
-  `"rules": { "react/jsx-uses-react": "error", "react/jsx-no-unused-vars": "off", "@typescript-eslint/no-unused-vars": ["error"], "react/react-in-jsx-scope": 0, "spaced-comment": ["error", "always", { "markers": ["/"] }] }`
-- Add the "next" in the end of all the extends
+- This is the .eslintrc.json I used for my projects:
+  `{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "next"
+  ],
+  "overrides": [],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "react/react-in-jsx-scope": 0,
+    "spaced-comment": ["error", "always", { "markers": ["/"] }],
+    "new-cap": 0
+  }
+}
+`
+- This is the .eslintignore I used for my projects:
+`# dependencies
+/node_modules
+
+# next.js
+/.next/
+
+# local env files
+.env*.local
+
+# vscode settings
+/.vscode/
+
+# husky
+/.husky/`
+- Add the "next" and "prettier" in the end of all the extends in the .eslintrc.json file
 
 ## Prettier
 
