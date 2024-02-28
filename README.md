@@ -9,6 +9,7 @@
 - Create a new Repository on the Github website
 - Set the existing Git Repository with your Project using: `git remote add origin GIT_REP_ADDRESS`
 - Push all the changes with: `git push -u origin master`
+- You can see the content of a proper .gitignore file in here <https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/.gitignore>
 
 ## ESLint
 
@@ -49,7 +50,7 @@
   }
 }
 `
-- You can see the content of the .eslintignore in here <https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/.eslintignore>
+- You can see the content of a proper .eslintignore in here <https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/.eslintignore>
 - Add the "next" and "prettier" in the end of all the extends in the .eslintrc.json file
 
 ## Prettier
