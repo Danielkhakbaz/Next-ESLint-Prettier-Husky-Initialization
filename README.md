@@ -49,6 +49,7 @@
   }
 }
 `
+- You can see the content of the .eslintignore in here<https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/.eslintignore>
 - Add the "next" and "prettier" in the end of all the extends in the .eslintrc.json file
 
 ## Prettier
