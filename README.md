@@ -50,21 +50,20 @@
 }
 `
 - This is the .eslintignore I used for my projects:
-`
-  dependencies
-  /node_modules
-  
-  next.js
-  /.next/
-  
-  local env files
-  .env*.local
-  
-  vscode settings
-  /.vscode/
-  
-  husky
-  /.husky/
+  `dependencies
+/node_modules
+
+next.js
+/.next/
+
+local env files
+.env*.local
+
+vscode settings
+/.vscode/
+
+husky
+/.husky/
 `
 - Add the "next" and "prettier" in the end of all the extends in the .eslintrc.json file
 
