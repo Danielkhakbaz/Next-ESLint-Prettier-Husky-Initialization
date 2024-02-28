@@ -75,8 +75,11 @@
 
 ## Next.js
 
-- Disable the jsDoc problem in \_app.tsx file with: `eslint-disable-next-line require-jsdoc`
-- Add the "next" in the end of all the extends in the eslintrc.json file
+- My go-to next.config.js is in here <https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/next.config.js>
+
+## Typescript
+
+- My go-to tsconfig.json is in here <https://github.com/Danielkhakbaz/Danial-Portfolio-Hub/blob/main/tsconfig.json>
 
 ## VSCode
 
