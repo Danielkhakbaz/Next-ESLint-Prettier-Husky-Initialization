@@ -66,7 +66,7 @@
 
 - Install husky on your Project: `npx husky-init && yarn`
 - Add these lines of scripts to your package.json file:
-  `    "dev": "next dev",
+  ` "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "fix": "next lint --fix && prettier --write .",
