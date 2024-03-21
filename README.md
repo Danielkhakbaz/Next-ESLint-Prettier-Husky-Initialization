@@ -54,13 +54,13 @@
 - Create a new Folder named .vscode
 - Inside that, Create a settings.json
 - Start writing these codes as json in the settings.json file:
-  `  "editor.formatOnPaste": true,
+  `{"editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.format": "explicit"
-  }`
+  }}`
 
 ## Husky
 
